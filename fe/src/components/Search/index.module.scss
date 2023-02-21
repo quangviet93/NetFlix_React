@@ -1,0 +1,41 @@
+// Colors
+$red: #e50914;
+$black: #221f1f;
+$blackblack: #000000;
+$grey: #f5f5f1;
+$white: #ffffff;
+$font: 'Lato', sans-serif;
+
+.Search {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+
+  input {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 14px;
+    height: 37px;
+    width: 20%;
+    background: transparent;
+    color: $white;
+    appearance: none;
+    border: 0;
+    border: 2px solid rgba($grey, 0.1);
+    outline: none;
+    border-radius: 37px;
+    padding: 0 10px;
+    pointer-events: all;
+    transition: border 0.25s ease, width 0.125s ease 0.125s;
+
+    &:focus {
+      border: 2px solid $red;
+      width: 30%;
+    }
+  }
+}
+
